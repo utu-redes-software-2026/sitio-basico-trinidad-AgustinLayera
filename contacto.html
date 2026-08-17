@@ -1,241 +1,100 @@
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
-
-    <meta charset="UTF-8">
-
-    <meta name="viewport"
-          content="width=device-width, initial-scale=1.0">
-
-    <title>NovaWeb | Contacto</title>
-
-    <link rel="stylesheet"
-          href="css/styles.css">
-
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Inicia el protocolo. Contacta con VOID_SYS.">
+  <title>VoidSys | Invocación</title>
+  
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="icon" type="image/x-icon" href="image/favicon.png">
 </head>
+<body class="brutal-mode">
 
-<body>
+  <div class="brutal-grid-container">
 
-
-    <header class="header">
-
-        <nav class="navbar">
-
-            <a href="index.html" class="logo">
-                Nova<span>Web</span>
-            </a>
-
-            <button class="menu-btn" id="menuBtn">
-                ☰
-            </button>
-
-            <ul class="menu" id="menu">
-
-                <li>
-                    <a href="index.html">
-                        Inicio
-                    </a>
-                </li>
-
-                <li>
-                    <a href="nosotros.html">
-                        Nosotros
-                    </a>
-                </li>
-
-                <li>
-                    <a href="servicios.html">
-                        Servicios
-                    </a>
-                </li>
-
-                <li>
-                    <a href="contacto.html" class="activo">
-                        Contacto
-                    </a>
-                </li>
-
-            </ul>
-
-        </nav>
-
+    <!-- NAV TIPO TERMINAL -->
+    <header class="brutal-header">
+      <a href="index.html" class="brutal-logo">VOID<span>SYS</span>_</a>
+      <nav class="brutal-nav">
+        <a href="index.html">[01] TERMINAL</a>
+        <a href="nosotros.html">[02] EL_CULTO</a>
+        <a href="servicios.html">[03] ARSENAL</a>
+        <a href="contacto.html" class="activo">[04] INVOCAR</a>
+      </nav>
     </header>
 
+    <main class="brutal-main">
+      
+      <!-- HERO INTERNO -->
+      <section class="brutal-hero-int">
+        <span class="sys-label">PROTOCOLO DE TRANSMISIÓN // 04</span>
+        <h1 class="massive-text-int">ESTABLECER CONEXIÓN.</h1>
+        <p>Introduce los parámetros de tu proyecto. Evaluaremos si estás preparado para operar bajo nuestra arquitectura.</p>
+      </section>
 
-    <main>
+      <!-- SECCIÓN DE CONTACTO ASIMÉTRICA -->
+      <section class="brutal-contact-section">
+        <div class="contact-info-panel">
+          <span class="sys-label">COORDENADAS DE ENLACE</span>
+          <h2>CANALES_ABIERTOS</h2>
+          <p>La mediocridad no tiene cabida aquí. Envía las directivas y el abismo responderá.</p>
 
-        <section class="hero-interno">
+          <div class="terminal-dato">
+            <span class="dato-key">SEÑAL DE RED:</span>
+            <span class="dato-val">root@voidsys.net</span>
+          </div>
 
-            <span>
-                HABLEMOS
-            </span>
+          <div class="terminal-dato">
+            <span class="dato-key">FRECUENCIA:</span>
+            <span class="dato-val">+598 99 123 456</span>
+          </div>
 
-            <h1>
-                Contacto
-            </h1>
+          <div class="terminal-dato">
+            <span class="dato-key">UBICACIÓN:</span>
+            <span class="dato-val">En las entrañas del abismo digital</span>
+          </div>
+        </div>
 
-            <p>
-                Contanos qué proyecto tenés en mente.
-            </p>
-
-        </section>
-
-
-        <section class="seccion">
-
-            <div class="contacto">
-
-                <!-- INFORMACIÓN -->
-
-                <div class="contacto-info">
-
-                    <span class="etiqueta">
-                        PONETE EN CONTACTO
-                    </span>
-
-                    <h2>
-                        Estamos para ayudarte
-                    </h2>
-
-                    <p>
-                        Completá el formulario y nos pondremos
-                        en contacto contigo.
-                    </p>
-
-                    <div class="dato">
-
-                        <strong>
-                            Email
-                        </strong>
-
-                        <span>
-                            info@novaweb.com
-                        </span>
-
-                    </div>
-
-
-                    <div class="dato">
-
-                        <strong>
-                            Teléfono
-                        </strong>
-
-                        <span>
-                            +598 99 123 456
-                        </span>
-
-                    </div>
-
-
-                    <div class="dato">
-
-                        <strong>
-                            Ubicación
-                        </strong>
-
-                        <span>
-                            Durazno, Uruguay
-                        </span>
-
-                    </div>
-
-                </div>
-
-
-                <!-- FORMULARIO -->
-
-                <form id="formContacto"
-                      class="formulario">
-
-                    <div class="campo">
-
-                        <label for="nombre">
-                            Nombre
-                        </label>
-
-                        <input
-                            type="text"
-                            id="nombre"
-                            name="nombre"
-                            placeholder="Tu nombre"
-                            required
-                        >
-
-                    </div>
-
-
-                    <div class="campo">
-
-                        <label for="email">
-                            Email
-                        </label>
-
-                        <input
-                            type="email"
-                            id="email"
-                            name="email"
-                            placeholder="tu@email.com"
-                            required
-                        >
-
-                    </div>
-
-
-                    <div class="campo">
-
-                        <label for="mensaje">
-                            Mensaje
-                        </label>
-
-                        <textarea
-                            id="mensaje"
-                            name="mensaje"
-                            rows="6"
-                            placeholder="Contanos sobre tu proyecto..."
-                            required
-                        ></textarea>
-
-                    </div>
-
-
-                    <button
-                        type="submit"
-                        class="btn btn-principal">
-                        Enviar mensaje
-                    </button>
-
-
-                    <p
-                        id="mensajeFormulario"
-                        class="mensaje-formulario">
-                    </p>
-
-                </form>
-
+        <div class="contact-form-panel">
+          <form id="formContacto" class="brutal-form">
+            <div class="campo-brutal">
+              <label for="nombre">IDENTIFICACIÓN [NOMBRE]</label>
+              <input type="text" id="nombre" name="nombre" placeholder="Introduce tu alias..." required>
             </div>
 
-        </section>
+            <div class="campo-brutal">
+              <label for="email">CANAL DE RETORNO [EMAIL]</label>
+              <input type="email" id="email" name="email" placeholder="tu@dominio.net" required>
+            </div>
+
+            <div class="campo-brutal">
+              <label for="mensaje">DIRECTIVA [MENSAJE / OBJETIVOS]</label>
+              <textarea id="mensaje" name="mensaje" rows="5" placeholder="Detalla los parámetros de tu incursión..." required></textarea>
+            </div>
+
+            <button type="submit" class="btn-brutal-form">EJECUTAR_TRANSMISIÓN ↵</button>
+            <p id="mensajeFormulario" class="mensaje-formulario"></p>
+          </form>
+        </div>
+      </section>
 
     </main>
 
-
-    <footer class="footer">
-
-        <div class="copyright">
-
-            <p>
-                © 2026 NovaWeb.
-            </p>
-
+    <!-- FOOTER -->
+    <footer class="brutal-footer">
+      <div class="footer-data">
+        <div class="data-col">
+          <p><strong>ESTADO:</strong> Canal cifrado de extremo a extremo</p>
         </div>
-
+        <div class="data-col right">
+          <p>© 2026 VOID_SYS. EL CÓDIGO ES ETERNO.</p>
+        </div>
+      </div>
     </footer>
 
+  </div>
 
-    <script src="js/script.js"></script>
-
+  <script src="js/script.js"></script>
 </body>
-
 </html>
